@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delivery Dashboard - Administrador</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="dashboard-container">
+    <!-- Barra Lateral de Navegação -->
+    <aside class="sidebar">
+    <!-- Ícone da Logo -->
+        <div class="logo-placeholder">
+            <span class="material-icons">delivery</span>
+      <nav class="menu">
+        <a href="#" class="menu-item active">Dashboard</a>
+        <a href="#" class="menu-item">Pedidos</a>
+        <a href="#" class="menu-item">Estoque</a>
+        <a href="#" class="menu-item">Catálogo</a>
+        <a href="#" class="menu-item">WhatsApp</a>
+        <a href="#" class="menu-item">Configurações</a>
+      </nav>
+      <button class="logout-btn">Sair</button>
+    </aside>
+
+    <!-- Conteúdo Principal -->
+    <main class="main-content">
+      <header class="header">
+        <div class="welcome">
+          <h1>Olá, Administrador! 👋</h1>
+          <p>Bem-vindo ao painel de controle do Delivery.</p>
+        </div>
+        <div class="user-profile">
+          <div class="profile-info">
+            <span class="profile-name" style="font-weight: bold; display: block;">Administrador</span>
+            <span class="profile-role" style="font-size: 12px; color: var(--text-sub);">Admin</span>
+          </div>
+        </div>
+      </header>
+
+      <!-- Grade de Métricas Principais -->
+      <section class="metrics-grid">
+        <div class="card">
+          <div class="card-title">Pedidos hoje</div>
+          <div class="card-value">24</div>
+          <div class="card-sub text-green">+12% em relação a ontem</div>
+        </div>
+        <div class="card">
+          <div class="card-title">Em preparo</div>
+          <div class="card-value">8</div>
+          <div class="card-sub text-orange">+3 desde a última hora</div>
+        </div>
+        <div class="card">
+          <div class="card-title">Em entrega</div>
+          <div class="card-value">5</div>
+          <div class="card-sub text-green">+1 desde a última hora</div>
+        </div>
+        <div class="card">
+          <div class="card-title">Faturamento hoje</div>
+          <div class="card-value">R$ 1.250,00</div>
+          <div class="card-sub text-green">+18% em relação a ontem</div>
+        </div>
+      </section>
+
+      <!-- Grid Inferior Separada por Blocos -->
+      <div class="content-grid">
+        <!-- Tabela de Pedidos Recentes -->
+        <section class="panel-section">
+          <div class="section-header">
+            <h2>Pedidos recentes</h2>
+            <button class="btn-view-all">Ver todos</button>
+          </div>
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Pedido</th>
+                <th>Cliente</th>
+                <th>Status</th>
+                <th>Pagamento</th>
+                <th>Total</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>#1025</strong></td>
+                <td><div>João Silva</div><small class="text-sub">(21) 99999-9999</small></td>
+                <td><span class="badge preparo">Em preparo</span></td>
+                <td>Pix</td>
+                <td><strong>R$ 48,90</strong></td>
+              </tr>
+              <tr>
+                <td><strong>#1024</strong></td>
+                <td><div>Ana Martins</div><small class="text-sub">(21) 98888-8888</small></td>
+                <td><span class="badge entrega">Em entrega</span></td>
+                <td>Cartão</td>
+                <td><strong>R$ 68,90</strong></td>
+              </tr>
+              <tr>
+                <td><strong>#1023</strong></td>
+                <td><div>Carlos Pereira</div><small class="text-sub">(21) 97777-7777</small></td>
+                <td><span class="badge confirmed">Confirmado</span></td>
+                <td>Pix</td>
+                <td><strong>R$ 32,00</strong></td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <!-- Coluna de Destaques de Estoque -->
+        <section class="panel-section">
+          <div class="section-header">
+            <h2>Estoque - Destaques</h2>
+          </div>
+          <div class="restaurant-list">
+            <div class="restaurant-card" style="justify-content: space-between; align-items: center; padding: 12px 0; border: none; border-bottom: 1px solid var(--border-color);">
+              <div>
+                <h4 style="margin: 0;">Pão de Hambúrguer</h4>
+                <small class="text-sub">Unidades restantes</small>
+              </div>
+              <strong style="color: var(--text-main);">140 un</strong>
+            </div>
+            <div class="restaurant-card" style="justify-content: space-between; align-items: center; padding: 12px 0; border: none; border-bottom: 1px solid var(--border-color);">
+              <div>
+                <h4 style="margin: 0;">Carne de Hambúrguer (Blend)</h4>
+                <small class="text-sub">Abaixo do esperado</small>
+              </div>
+              <strong class="text-orange">22 un</strong>
+            </div>
+            <div class="restaurant-card" style="justify-content: space-between; align-items: center; padding: 12px 0; border: none;">
+              <div>
+                <h4 style="margin: 0;">Batata Palito Congelada</h4>
+                <small class="text-sub">Crítico</small>
+              </div>
+              <strong class="text-orange" style="color: #e65100;">3 kg</strong>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
